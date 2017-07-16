@@ -1,0 +1,43 @@
+.top {
+  background-image: url(../img/top.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  height: 450px;
+}
+h1 {
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
+}
+.navbar-default .navbar-nav > .active > a {
+  color: inherit;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+}
+.navbar-nav {
+  float: none;
+  text-align: center;
+}
+.navbar-nav li {
+  float: none;
+  display: inline-block;
+ /* margin-left: 50px;*/
+}
+.navbar {
+  border: none;
+}
+.dropdown-menu {
+  font-size: 10px;
+}
+
+/* iPads (горизонтальная) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 813px) and (orientation: landscape) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 13px;
+  }
+}
