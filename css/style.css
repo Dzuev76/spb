@@ -41,9 +41,19 @@ h1 .div_opacity{
 }
 
 /* iPads (горизонтальная) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 940px) and (orientation: landscape) {
+@media (max-width: 957px) {
   .navbar-default .navbar-nav > li > a {
     font-size: 10px;
+  }
+}
+@media (max-width: 830px) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 7px;
+  }
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 30px;
   }
 }
 .sky {
@@ -241,3 +251,28 @@ h1 .div_opacity{
     left: -200%
   }
 }
+/*h2{
+    margin: 0;
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;
+}*/
+.item {
+  background: inherit;
+  text-align: center;
+  height: 370px !important;
+}
+.carousel-indicators {
+  bottom: 5px;
+}
+.col-md-8 {
+  padding: 0;
+  margin: 0 20px 20px 20px;
+}
+/*.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    margin-left: -60px;
+}
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    margin-right: -60px;
+}*/
