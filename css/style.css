@@ -48,7 +48,7 @@ h1 .div_opacity{
 }
 @media (max-width: 830px) {
   .navbar-default .navbar-nav > li > a {
-    font-size: 7px;
+    font-size: 9px;
   }
 }
 @media (max-width: 450px) {
@@ -261,14 +261,14 @@ h1 .div_opacity{
 .item {
   background: inherit;
   text-align: center;
-  height: 370px !important;
+  height: 346px !important;
 }
 .carousel-indicators {
   bottom: 5px;
 }
 .col-md-8 {
   padding: 0;
-  margin: 0 20px 20px 20px;
+  margin: 20px;
 }
 /*.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
     margin-left: -60px;
@@ -276,3 +276,14 @@ h1 .div_opacity{
 .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
     margin-right: -60px;
 }*/
+.sot {
+  background-image: url(../img/sot.jpg);
+  margin-top: -20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#myCarousel {
+-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 1);
+-moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 1);
+box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 1);
+}
