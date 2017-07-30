@@ -251,39 +251,16 @@ h1 .div_opacity{
     left: -200%
   }
 }
-/*h2{
-    margin: 0;
-    color: #666;
-    padding-top: 90px;
-    font-size: 52px;
-    font-family: "trebuchet ms", sans-serif;
-}*/
-.item {
-  background: inherit;
+.carousel {
+  padding: 0px;
+}
+p {
+  border: 2px solid white;
+  font-size: 20px;
+}
+.museum {
   text-align: center;
-  height: 346px !important;
 }
-.carousel-indicators {
-  bottom: 5px;
-}
-.col-md-8 {
-  padding: 0;
-  margin: 20px;
-}
-/*.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
-    margin-left: -60px;
-}
-.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
-    margin-right: -60px;
-}*/
-.sot {
-  background-image: url(../img/sot.jpg);
-  margin-top: -20px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#myCarousel {
--webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 1);
--moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 1);
-box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 1);
+h2 {
+  margin-bottom: 50px;
 }

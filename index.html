@@ -14,7 +14,6 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
               <!-- Include all compiled plugins (below), or include individual files as needed -->
               <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
-                <script type="text/javascript" src="js/myCarousel.js"></script>           
     </head>
 <body>
   <div class="container-fluid sky"> <div class="moon"></div>
@@ -111,98 +110,134 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-</nav>
-<div class="container-fluid sot">
+
+<div class="container-fluid top">
   <div class="row">
-     <div class="col-md-8">
-      <!-- Карусель -->
-<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
-  <!-- Индикаторы для карусели -->
+    <div class="col-xs-12 col-md-8 carousel">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
   <ol class="carousel-indicators">
-    <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <!-- Перейти к 3 слайду карусели с помощью соответствующего индекса data-slide-to="3" -->
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-     <!-- Перейти к 4 слайду карусели с помощью соответствующего индекса data-slide-to="3" -->
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-  </ol>   
-  <!-- Слайды карусели -->
-  <div class="carousel-inner">
-    <!-- Слайды создаются с помощью контейнера с классом item, внутри которого помещается содержимое слайда -->
-    
-    <div class="active item">
-      <!-- <h2>Слайд №1</h2> -->
-      <a href="#">
-      <img src="img/1.jpg"></a>
-      <a href="#">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/1.jpg" alt="...">
       <div class="carousel-caption">
-        <h3>Заголовок 1 слайда</h3>
-        <p>Текст (описание) 1 слайда...</p>
-      </div></a>
+        <p>Государственный Эрмитаж</p>
+      </div>
     </div>
-    <!-- Слайд №2 -->
     <div class="item">
-      <!-- <h2>Slide 2</h2> -->
-      <a href="#">
-      <img src="img/2.jpg"></a>
-      <a href="#">
+      <img src="img/2.jpg" alt="Исаакиевский собор">
       <div class="carousel-caption">
-        <h3>Second slide label</h3>
-        <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-      </div></a>
+        <p>Исаакиевский собор</p>
+      </div>
     </div>
-    <!-- Слайд №3 -->
-   <div class="item">
-      <!-- <h2>Slide 2</h2> -->
-      <a href="#">
-      <img src="img/3.jpg"></a>
-      <a href="#">
+     <div class="item">
+      <img src="img/3.jpg" alt="Государственный Русский музей">
       <div class="carousel-caption">
-        <h3>Second slide label</h3>
-        <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-      </div></a>
+        <p>Государственный Русский музей</p>
+      </div>
     </div>
-  <div class="item">
-      <!-- <h2>Slide 2</h2> -->
-      <a href="#">
-      <img src="img/4.jpg"></a>
-      <a href="#">
+     <div class="item">
+      <img src="img/4.jpg" alt="Государственный Музей-Заповедник (Петергоф)">
       <div class="carousel-caption">
-        <h3>Second slide label</h3>
-        <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-      </div></a>
-    </div> 
-<div class="item">
-      <!-- <h2>Slide 2</h2> -->
-      <a href="#">
-      <img src="img/5.jpg"></a>
-      <a href="#">
+        <p>Государственный Музей-Заповедник "Петергоф"</p>
+      </div>
+    </div>
+     <div class="item">
+      <img src="img/5.jpg" alt="Петропавловская крепость">
       <div class="carousel-caption">
-        <h3>Second slide label</h3>
-        <p>Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-      </div></a>
-    </div> 
+        <p>Петропавловская крепость</p>
+      </div>
     </div>
   </div>
-  <!-- Навигация для карусели -->
-  <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
   </a>
-  <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
   </a>
-
-</div>
-  </div> 
     </div>
+    <div class="col-xs-12 col-md-4 museum"><h2>ТОП 5 музеев г.Санкт - Петербурга</h2>
+      <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Государственный Эрмитаж</a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse">
+      <div class="panel-body">
+        Госуда́рственный Эрмита́ж — один из крупнейших и самых значительных художественных и культурно-исторических музеев России и мира. Находится в Санкт-Петербурге.Свою историю музей начинал с коллекции произведений искусства, приобретённых в частном порядке российской императрицей Екатериной II. Первоначально это собрание размещалось в специальном дворцовом флигеле — Малом Эрмитаже (от фр. ermitage — место уединения, келья, приют отшельника, затворничество), откуда и закрепилось общее название будущего музея. В 1852 году из сильно разросшейся коллекции был сформирован и открыт для посещения публики Императорский Эрмитаж.Современный Государственный Эрмитаж представляет собой сложный музейный комплекс. Основная экспозиционная часть музея занимает пять зданий, расположенных вдоль набережной реки Невы, главным из которых принято считать Зимний дворец, а также Восточное крыло Главного штаба на Дворцовой площади. Коллекция музея насчитывает около трёх миллионов произведений искусства и памятников мировой культуры, начиная с каменного века и до нашего столетия.Государственный Эрмитаж входит в двадцать самых посещаемых художественных музеев мира.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> Исаакиевский собор</a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        Исаа́киевский собо́р (официальное название — собор преподо́бного Исаа́кия Далма́тского) — крупнейший православный храм Санкт-Петербурга. Расположен на Исаакиевской площади. Имеет статус музея (музейный комплекс «Государственный музей-памятник „Исаакиевский собор“»).Построен в 1818—1858 гг. по проекту архитектора Огюста Монферрана; строительство курировал император Николай I, председателем Комиссии о построении собора был Карл Опперман. Творение Монферрана — четвёртый по счёту храм в честь Исаакия Далматского, построенный на этом месте в Санкт-Петербурге. Освящён во имя преподобного Исаакия Далматского, почитаемого Петром I святого, так как император родился в день его памяти — 30 мая по юлианскому календарю. Торжественное освящение 30 мая (11 июня) 1858 года нового кафедрального собора совершил митрополит Новгородский, Санкт-Петербургский, Эстляндский и Финляндский Григорий (Постников).Зарегистрированная в июне 1991 года церковная община получила возможность совершать в соборе богослужения. Богослужения в Исаакиевском соборе проводятся ежедневно, за исключением среды.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Государственный Русский музей</a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+       Госуда́рственный Ру́сский музе́й (до 1917 года «Ру́сский Музе́й Импера́тора Алекса́ндра III») — крупнейший музей русского искусства в мире. Находится в центральной части Санкт-Петербурга. Современный Русский музей представляет собой сложный музейный комплекс. Основная экспозиционная часть музея занимает пять зданий: Михайловский дворец (главное здание музея) с выставочным корпусом Бенуа, Михайловский (Инженерный) замок, Мраморный дворец, Строгановский дворец и Летний дворец Петра I. В состав музея входят также Михайловский сад, Летний сад, сад Михайловского (Инженерного) замка и Домик Петра I на Петровской набережной и ряд других зданий. Директор музея — Владимир Александрович Гусев. На 1 января 2015 года собрание Русского музея составило 410 945 единиц хранения. В это число входят произведения живописи, графики, скульптуры, нумизматики, декоративно-прикладного и народного искусства, а также архивные материалы.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Государственный Музей-Заповедник "Петергоф"</a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse">
+      <div class="panel-body">
+        Изначально ГМЗ «Петергоф» создавался как организация-эксплуатант дворцово-паркового ансамбля «Петергоф». Впоследствии в течение XX века под управление ГМЗ «Петергоф» были переданы дворцово-парковый ансамбль «Александрия» и Колонистский парк в Петергофе, Дворец Петра I и Константиновский дворец в Стрельне и музеи «Императорские яхты», семьи Бенуа и велосипедов. В 2007 году после ликвидации ГМЗ «Ораниенбаум» дворцово-парковый ансамбль «Ораниенбаум» в Ломоносове также был передан ГМЗ «Петергоф».Ежегодно ГМЗ «Петергоф» посещают 4 с половиной миллиона человек.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Петропавловская крепость</a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse">
+      <div class="panel-body">
+        Петропа́вловская кре́пость — крепость в Санкт-Петербурге, расположенная на Заячьем острове, историческое ядро города. Официальное название — Санкт-Петербу́ргская, в 1914—1917 годах — Петрогра́дская крепость.
+      </div>
+    </div>
+  </div>
+</div>
 
 
+
+    </div>
+  </div>
+</div>
+
+   
 
 <script type="text/javascript">
 $(document).ready(function(){
