@@ -6,14 +6,16 @@ h1 {
   color: white;
   position: relative;
 }
-h1 .new{opacity: 0;}
-h1 .div_opacity{
+h1 .new {
+  opacity: 0;
+}
+h1 .div_opacity {
   -webkit-transition: opacity .1s ease-in-out;
   -moz-transition: opacity .1s ease-in-out;
   -ms-transition: opacity .1s ease-in-out;
   -o-transition: opacity .1s ease-in-out;
   transition: opacity .1s ease-in-out;
-  opacity: 1;}
+  opacity: 1;
 }
 .navbar-default .navbar-nav > .active > a {
   color: inherit;

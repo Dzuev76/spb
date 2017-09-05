@@ -21,7 +21,7 @@
       <div class="clouds_one"></div>
       <div class="clouds_three"></div>
       <h1>Дворцы и соборы Санкт-Петербурга</h1></div>
-    <nav class="navbar navbar-default">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -110,7 +110,6 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
-
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs-12 col-md-8 carousel">
@@ -285,12 +284,12 @@
   </div>      
 </div>    
   </div>
-<!-- </div> -->
+</div>
 <div class="container-fluid maps">
   <div class="row">
     <div class="col-xs-12 col-md-6 mapYandex"><img src="img/map.jpeg" class="img-responsive center-block" alt="Responsive image">
        <button type="button" class="btn btn-link center-block" data-toggle="modal" data-target="#myModal1">Увеличить карту</button>
-        <div id="myModal1" class="modal fade bs-example-modal-lg" tabindex="1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div id="myModal1" class="modal fade bs-example-modal-lg" tabindex="1" role="dialog" aria-labelledby="myModal1">
           <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content yandex">
               <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aba2937e29585aaf52607b036add40160c767c0f8ef1dfe614738fd4cdfa912b0&amp;width=100%&amp;height=660&amp;lang=ru_RU&amp;scroll=true"></script>
@@ -300,7 +299,7 @@
     </div>
     <div class="col-xs-12 col-md-6 metro"><img src="img/metro.jpg" class="img-responsive center-block" alt="Responsive image">
       <button type="button" class="btn btn-link center-block" data-toggle="modal" data-target="#myModal2">Увеличить карту</button>
-        <div id="myModal2" class="modal fade bs-example-modal-lg" tabindex="2" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div id="myModal2" class="modal fade bs-example-modal-lg" tabindex="2" role="dialog" aria-labelledby="myModal2">
           <div class="modal-dialog modal-lg myModal2" role="document">
             <div class="modal-content metrospb">
               <img src="img/metromax.jpg" class="img-responsive" alt="Responsive image">
@@ -310,34 +309,21 @@
     </div>
   </div>
 </div>
-<div class="container-fluid">
-  <div class="row">
-  <div class="footer">Тут будет подвал</div>
-  </div>
-</div>
-
-   <div>
-     <form>
-      <input type="text" placeholder="Искать здесь...">
-      <button type="submit" class="hold"></button>
-</form>
-   </div>
-
 <script type="text/javascript">
-$(document).ready(function(){
- $.fn.animate_Text = function() {
-  var string = this.text();
-  return this.each(function(){
-   var $this = $(this);
-   $this.html(string.replace(/./g, '<span class="new">$&</span>'));
-   $this.find('span.new').each(function(i, el){
-    setTimeout(function(){ $(el).addClass('div_opacity'); }, 80 * i);
-   });
+  $(document).ready(function(){
+   $.fn.animate_Text = function() {
+    var string = this.text();
+    return this.each(function(){
+     var $this = $(this);
+     $this.html(string.replace(/./g, '<span class="new">$&</span>'));
+     $this.find('span.new').each(function(i, el){
+      setTimeout(function(){ $(el).addClass('div_opacity'); }, 80 * i);
+     });
+    });
+   };
+   $('h1').show();
+   $('h1').animate_Text();
   });
- };
- $('h1').show();
- $('h1').animate_Text();
-});
 </script>
 </body>
   </html>
